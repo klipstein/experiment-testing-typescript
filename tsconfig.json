@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "target": "es5",
+        "lib": ["es5", "es2015", "webworker", "es2015.promise", "es2015.iterable"]
+    }
+}

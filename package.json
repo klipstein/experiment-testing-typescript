@@ -1,0 +1,22 @@
+{
+  "name": "experiment-testing-typescript",
+  "version": "1.0.0",
+  "description": "Experiment testing typescript with ava and mocha",
+  "main": "index.js",
+  "scripts": {
+    "pretest-ava": "tsc",
+    "test-ava": "ava index-ava-test.js",
+    "pretest-mocha": "tsc -p .",
+    "test-mocha": "mocha --ui tdd index-mocha-test.js"
+  },
+  "author": "Tobias von Klipstein",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mocha": "^2.2.31",
+    "@types/power-assert": "0.0.27",
+    "ava": "^0.16.0",
+    "mocha": "^3.0.2",
+    "power-assert": "^1.4.1",
+    "typescript": "^2.1.0-dev.20160914"
+  }
+}
