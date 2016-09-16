@@ -6,8 +6,7 @@
   "scripts": {
     "pretest-ava": "tsc",
     "test-ava": "ava index-ava-test.js",
-    "pretest-mocha": "tsc",
-    "test-mocha": "mocha --ui tdd index-mocha-test.js"
+    "test-mocha": "mocha --opts mocha.opts"
   },
   "author": "Tobias von Klipstein",
   "license": "ISC",
@@ -17,6 +16,7 @@
     "ava": "^0.16.0",
     "mocha": "^3.0.2",
     "power-assert": "^1.4.1",
+    "ts-node": "^1.3.0",
     "typescript": "^2.1.0-dev.20160914"
   }
 }

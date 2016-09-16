@@ -5,9 +5,9 @@ import {equal} from 'power-assert';
 // but the type description of mocha does not include
 // mocha.test
 
-var compareValue;
+let compareValue;
 
-beforeEach(function() {
+suiteSetup(function() {
   compareValue = 10;
 });
 
