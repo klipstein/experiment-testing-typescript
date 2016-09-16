@@ -6,7 +6,7 @@
   "scripts": {
     "pretest-ava": "tsc",
     "test-ava": "ava index-ava-test.js",
-    "pretest-mocha": "tsc -p .",
+    "pretest-mocha": "tsc",
     "test-mocha": "mocha --ui tdd index-mocha-test.js"
   },
   "author": "Tobias von Klipstein",
