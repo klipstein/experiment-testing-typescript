@@ -12,14 +12,13 @@ suiteSetup(function() {
 });
 
 test('an async test works', async () => {
-  var a = await new Promise((resolve, reject) => {
-    setTimeout(resolve, 500, 10);
-  });
-  equal(a, compareValue);
+  var subject: Calculator = new Calculator();
+  var result: number = await subject.somethingAsync();
+  equal(result, compareValue);
 });
 
 test('calculator adds two numbers', () => {
-  var subject : Calculator = new Calculator();
-  var result : number = subject.add(2, 8);
+  var subject: Calculator = new Calculator();
+  var result: number = subject.add(2, 8);
   equal(result, compareValue);
 });

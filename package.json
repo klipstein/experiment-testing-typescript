@@ -4,6 +4,7 @@
   "description": "Experiment testing typescript with ava and mocha",
   "main": "index.js",
   "scripts": {
+    "build": "rollup -c",
     "pretest-ava": "tsc",
     "test-ava": "ava index-ava-test.js",
     "test-mocha": "mocha --opts mocha.opts"
@@ -16,6 +17,8 @@
     "ava": "^0.16.0",
     "mocha": "^3.0.2",
     "power-assert": "^1.4.1",
+    "rollup": "^0.35.11",
+    "rollup-plugin-typescript": "git+ssh://git@github.com:klipstein/rollup-plugin-typescript.git",
     "ts-node": "^1.3.0",
     "typescript": "^2.1.0-dev.20160914"
   }

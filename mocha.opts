@@ -1,0 +1,5 @@
+--require ts-node/register
+--reporter dot
+--ui tdd
+--watch-extensions tsx,ts
+index-mocha-test.ts

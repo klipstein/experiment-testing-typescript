@@ -8,10 +8,9 @@ test.beforeEach(function() {
 });
 
 test('an async test works', async (t) => {
-  var a = await new Promise((resolve, reject) => {
-    setTimeout(resolve, 500, 10);
-  });
-  t.is(a, compareValue);
+  var subject: Calculator = new Calculator();
+  var result: number = await subject.somethingAsync();
+  t.is(result, compareValue);
 });
 
 test('adds two numbers', t => {
